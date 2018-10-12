@@ -42,6 +42,8 @@ namespace Agenda {
             }
 
             window = new AgendaWindow ();
+            Gtk.Settings.get_default().set_property("gtk-theme-name", "elementary");
+            Gtk.Settings.get_default().set_property("gtk-icon-theme-name", "elementary");
             window.set_application (this);
             window.delete_event.connect(window.main_quit);
             window.show_all ();
